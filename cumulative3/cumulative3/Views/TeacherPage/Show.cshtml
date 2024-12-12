@@ -1,0 +1,6 @@
+﻿@model cumulative3.Models.Teacher
+<h1>@Model.FName @Model.LName</h1>
+<a href="/TeacherPage/List">Back to List</a> <a class="alert-warning" href="/TeacherPage/DeleteConfirm/@Model.Id">Delete</a>
+<p><span style="font-style:italic">Joined: @Model.JoinDate.ToString("yyyy-M-d")</span></p>
+<p><span style="font-style:italic">salary: @Model.Salary</span></p>
+<p>@Model.ENo</p>

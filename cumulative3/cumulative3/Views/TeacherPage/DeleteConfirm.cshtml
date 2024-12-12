@@ -1,0 +1,14 @@
+﻿@model cumulative3.Models.Teacher
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/TeacherPage/Show/@Model.Id">Cancel</a>
+    </nav>
+    <h2>Are you sure you want to delete @Model.FName @Model.LName?</h2>
+    <p>This action cannot be undone.</p>
+    <form method="POST" action="/TeacherPage/Delete/@Model.Id">
+        <button class="btn-warning">
+            Confirm Delete
+        </button>
+    </form>
+</div>
